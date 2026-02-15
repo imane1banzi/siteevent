@@ -1,0 +1,15 @@
+<header class="header" [class.sticky]="isSticky" [class.transparent]="!isSticky">
+  <nav class="navbar">
+    <a class="logo" href="/">Lucy In The Sky</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+

@@ -1,0 +1,77 @@
+/* header général */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0; right: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+/* transparent au départ */
+.header.transparent {
+  background: rgba(0, 0, 0, 0);
+  padding: 1.5rem 2rem;
+}
+
+/* sticky après scroll */
+.header.sticky {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+}
+
+/* nav interne */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd00;
+}
+
+/* menu burger pour mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: .3rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
