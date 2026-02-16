@@ -1,0 +1,14 @@
+export default `<!doctype html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>Siteevent</title>
+  <base href="https://imane1banzi.github.io/siteevent/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}body{margin:0;overflow-x:hidden}</style><link rel="stylesheet" href="styles-6DAQ7U5B.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-6DAQ7U5B.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-6ZD3L2JA.js" type="module"></script></body>
+</html>
+`;
