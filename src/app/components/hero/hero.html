@@ -8,12 +8,65 @@
   <!-- Overlay sombre -->
   <div class="overlay"></div>
 
-  <!-- Contenu -->
-  <div class="hero-content">
-    <h1>Welcome to <span>Lucy In The Sky</span></h1>
-    <p>Explore our latest collection and creative universe</p>
-    <a class="btn-primary" href="#about">Discover More</a>
+  <!-- Contenu principal -->
+  <div class="hero-container">
+
+    <!-- Texte principal -->
+    <div class="hero-content">
+      <h1>Welcome to <span>Lucy In The Sky</span></h1>
+      <p>Explore our latest collection and creative universe</p>
+    </div>
+
+    <!-- Formulaire réservation -->
+    <div class="reservation-box">
+
+      <h2>Book Your Event</h2>
+
+      <!-- Message de confirmation -->
+      <div *ngIf="reservationNumber" class="success-box">
+        ✅ Reservation Confirmed <br>
+        Your Number: <strong>{{ reservationNumber }}</strong>
+      </div>
+
+      <form (ngSubmit)="sendEmail()">
+
+        <input 
+          type="text"
+          placeholder="Full Name"
+          [(ngModel)]="name"
+          name="name"
+          required
+        >
+
+        <input 
+          type="email"
+          placeholder="Email Address"
+          [(ngModel)]="email"
+          name="email"
+          required
+        >
+
+        <input 
+          type="date"
+          [(ngModel)]="date"
+          name="date"
+          required
+        >
+
+        <textarea 
+          placeholder="Your Message"
+          [(ngModel)]="message"
+          name="message"
+        ></textarea>
+
+        <button type="submit">
+          Reserve Now
+        </button>
+
+      </form>
+
+    </div>
+
   </div>
 
 </section>
-
