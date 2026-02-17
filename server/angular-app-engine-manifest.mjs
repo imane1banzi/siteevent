@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://imane1banzi.github.io/siteevent',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
